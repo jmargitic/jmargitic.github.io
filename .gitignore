@@ -1,0 +1,24 @@
+# Node
+node_modules/
+dist/
+
+# OS
+.DS_Store
+
+# R
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+*.Rmd
+
+# Root-level duplicates (source of truth is public/)
+/images/
+/images_page/
+
+# Unused
+*.HEIC
+
+# Old site backup
+_old_site/
