@@ -12,8 +12,8 @@ export const publications = [
     description:
       'We study how distance to one\u2019s polling place affects the likelihood of voting using a geographic regression discontinuity design with data from Pennsylvania and Georgia. A one-mile increase in distance to polling place reduces the likelihood of voting in person by 2 to 3 percentage points. Effects are two to four times higher among those closest to the polling place. When available, voters substitute to mail-in voting as distance to polling place increases. We estimate a discrete-choice voting model to identify turnout-maximizing polling places. Some precincts have large potential gains in turnout, even when choosing from existing buildings.',
     links: [
-      { label: 'Paper', url: 'https://jmargitic.github.io/JM/22_11_23_Bagwe_et_al.pdf' },
-      { label: 'Appendix', url: 'https://jmargitic.github.io/JM/22_11_23_Bagwe_et_al_onlineapp.pdf' },
+      { label: 'Paper', url: 'https://drive.google.com/file/d/1a46Gd-y350eLcAzMbERUBji7cFyJzXRl/view' },
+      { label: 'Online Appendix', url: 'https://drive.google.com/file/d/1uOl0YHuG04-50IMShdZZgDl6giASnu_H/view' },
       { label: 'Journal', url: 'https://www.aeaweb.org/articles?id=10.1257/pol.20220435' },
     ],
   },
@@ -67,7 +67,7 @@ export const workInProgress = [
     title: 'Where is the Party? Campaign Visits in US Presidential Elections',
     authors: [{ name: 'Juan Margitic' }],
     description:
-      'Presidential candidates face crucial and difficult decisions when deciding which locations to include on their campaign trails. I develop a theoretical model that describes the types of allocations that maximize electoral returns and continue to test these predictions using a novel dataset of presidential visits from the 2012 and 2016 election at the county level.',
+      'This project examines how presidential candidates strategically choose campaign visit locations within states to maximize electoral returns. Using a theoretical model and a novel dataset of visits from the 2012 and 2016 elections at the county level, the research fills a gap in understanding sub-state strategic allocations under the electoral college system.',
   },
   {
     title: 'Bandwagon Effects in Caucuses',
@@ -77,7 +77,7 @@ export const workInProgress = [
       { name: 'Ben Solow', url: 'https://sites.google.com/site/bensolow/' },
     ],
     description:
-      'In multi-candidate elections, past electoral outcomes may serve as a coordination device for strategic voters and as a bandwagon for behavioral voters. We use the setting provided by the Iowa Democratic presidential caucuses to test this hypothesis using a regression discontinuity design.',
+      'Utilizing a regression discontinuity design in the context of the Iowa Democratic presidential caucuses, this study tests how past electoral outcomes act as coordination devices or \u201Cbandwagons.\u201D Results show that candidates narrowly ranking higher in initial rounds receive significantly higher vote shares in subsequent rounds, suggesting that coordination and behavioral motivations are vital in high-stakes elections.',
   },
 ]
 
@@ -86,13 +86,15 @@ export const idbPublications = [
     title: 'Inova\u00E7\u00F5es para melhoria da informa\u00E7\u00E3o dos estudantes em transi\u00E7\u00E3o para o ensino m\u00E9dio',
     authors: [
       { name: 'Martim Ancona de F. B. Aguiar' },
-      { name: 'Gregory Elacqua' },
+      { name: 'Gregory Elacqua', url: 'https://sites.google.com/view/gregoryelacqua/home' },
       { name: 'Juan Margitic' },
       { name: 'Danielle Nascimento' },
     ],
     journal: 'IDB Technical Note, 2023',
     image: '/images_page/improving_educacion.png',
     imageAlt: 'Improving student information for high school transition',
+    description:
+      'This guide details an interactive informational tool designed to help students in Esp\u00EDrito Santo, Brazil, navigate curriculum changes in secondary education. It includes a randomized control trial (RCT) with over 10,000 participants based on behavioral economics nudges to encourage enrollment in full-time education models.',
     links: [
       { label: 'Paper', url: 'https://publications.iadb.org/publications/portuguese/viewer/Inovac%C3%B5es-para-melhoria-da-informac%C3%A3o-dos-estudantes-em-transic%C3%A3o-para-o-ensino-medio--guia-para-sua-jornada-no-novo-ensino-medio-capixaba.pdf' },
       { label: 'IDB Note', url: 'https://publications.iadb.org/pt/inovacoes-para-melhoria-da-informacao-dos-estudantes-em-transicao-para-o-ensino-medio-guia-para-sua' },
@@ -102,12 +104,16 @@ export const idbPublications = [
     title: 'Quantifying the Benefits of Digitalizing and Centralizing Teacher Applications and Assignment',
     authors: [
       { name: 'Antonia Aguilera' },
-      { name: 'Gregory Elacqua' },
+      { name: 'Gregory Elacqua', url: 'https://sites.google.com/view/gregoryelacqua/home' },
       { name: 'Josefina Lavin' },
       { name: 'Juan Margitic' },
-      { name: 'Christopher Neilson' },
+      { name: 'Christopher Neilson', url: 'https://christopherneilson.github.io/' },
     ],
     journal: 'IDB Technical Note, 2023',
+    image: '/images_page/cuantificando_costos_mat.png',
+    imageAlt: 'Net savings from centralized teacher assignment',
+    description:
+      'This document advocates for digital centralized teacher assignment systems in Latin America. Using administrative data from Ecuador, the study estimates that digitalization could generate over USD 17 million in annual impact through implementation savings and improved teacher-quality matching.',
     links: [
       { label: 'Paper', url: 'https://publications.iadb.org/publications/english/viewer/Quantifying-the-benefits-of-digitalizing-and-centralizing-teacher-applications-and-assignment.pdf' },
       { label: 'IDB Note', url: 'https://publications.iadb.org/en/quantifying-benefits-digitalizing-and-centralizing-teacher-applications-and-assignment' },
@@ -117,14 +123,16 @@ export const idbPublications = [
     title: 'Quantifying the Benefits of Digitalizing and Centralizing Student Applications and Assignment to Schools',
     authors: [
       { name: 'Antonia Aguilera' },
-      { name: 'Gregory Elacqua' },
+      { name: 'Gregory Elacqua', url: 'https://sites.google.com/view/gregoryelacqua/home' },
       { name: 'Josefina Lavin' },
       { name: 'Juan Margitic' },
-      { name: 'Christopher Neilson' },
+      { name: 'Christopher Neilson', url: 'https://christopherneilson.github.io/' },
     ],
     journal: 'IDB Technical Note, 2022',
     image: '/images_page/quantifying_the_benefits_of_centralizing_students.png',
     imageAlt: 'Net savings from centralized student assignment',
+    description:
+      'Analysis of administrative data from Chile suggests that transitioning from decentralized to digital centralized student assignment systems can generate a net impact of USD 13 million by improving transparency, monitoring, and efficiency.',
     links: [
       { label: 'Paper', url: 'https://publications.iadb.org/publications/english/viewer/Quantifying-the-Benefits-of-Digitalizing-and-centralizing-Sudent-Applications-and-Assignment-to-Schools.pdf' },
       { label: 'IDB Note', url: 'https://publications.iadb.org/en/quantifying-benefits-digitalizing-and-centralizing-sudent-applications-and-assignment-schools' },
@@ -136,6 +144,8 @@ export const idbPublications = [
     journal: 'IDB Education Department Flagship Publication, 2022',
     image: '/images_page/how_to_reboot_education_image.png',
     imageAlt: 'How to reboot education post-pandemic',
+    description:
+      'A comprehensive report on the impact of COVID-19 on 165 million students in Latin America and the Caribbean. It outlines policy priorities to rebuild more resilient and equitable education systems to prevent long-term human capital loss.',
     links: [
       { label: 'English', url: 'https://publications.iadb.org/en/how-reboot-education-post-pandemic-delivering-promise-better-future-youth' },
       { label: 'Espa\u00F1ol', url: 'https://publications.iadb.org/publications/spanish/viewer/Como-reconstruir-la-educacion-postpandemia-Soluciones-para-cumplir-con-la-promesa-de-un-mejor-futuro-para-la-juventud.pdf' },
@@ -145,13 +155,15 @@ export const idbPublications = [
     title: 'P\u00E9rdidas de aprendizaje debido al COVID-19: desaf\u00EDos y hallazgos en el caso de Colombia',
     authors: [
       { name: 'Ximena Due\u00F1as' },
-      { name: 'Gregory Elacqua' },
+      { name: 'Gregory Elacqua', url: 'https://sites.google.com/view/gregoryelacqua/home' },
       { name: 'Luis Jaramillo' },
       { name: 'Juan Margitic' },
     ],
     journal: 'IDB Technical Note, 2022',
     image: '/images_page/perdidas_aprendizaje_col.png',
     imageAlt: 'Learning losses in Colombia',
+    description:
+      'This study analyzes standardized test scores in Colombia post-pandemic, revealing that while average scores might appear stable, they mask significant dropout rates among lower-ability students. The estimated impact of school closures on learning is roughly 0.05 standard deviations.',
     links: [
       { label: 'Paper', url: 'https://publications.iadb.org/publications/spanish/viewer/Perdidas-de-aprendizaje-debido-al-COVID-19-desafios-y-hallazgos-en-el-caso-de-Colombia.pdf' },
       { label: 'IDB Note', url: 'https://publications.iadb.org/es/perdidas-de-aprendizaje-debido-al-covid-19-desafios-y-hallazgos-en-el-caso-de-colombia' },
