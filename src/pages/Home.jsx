@@ -44,28 +44,6 @@ export default function Home() {
           </div>
         </section>
       </FadeIn>
-
-      {/* Contact */}
-      <FadeIn>
-        <section id="contact">
-          <div className="container">
-            <div className="section-header">
-              <h2><span className="section-prefix">03.</span> Contact</h2>
-            </div>
-            <div className="contact-bar">
-              <a href="mailto:jfmargitic@gmail.com">
-                <i className="fas fa-envelope" /> jfmargitic@gmail.com
-              </a>
-              <a href="https://www.linkedin.com/in/juan-margitic/" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-linkedin-in" /> LinkedIn
-              </a>
-              <a href="https://github.com/jmargitic" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-github" /> GitHub
-              </a>
-            </div>
-          </div>
-        </section>
-      </FadeIn>
     </>
   )
 }

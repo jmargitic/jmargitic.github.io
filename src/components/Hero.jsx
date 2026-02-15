@@ -15,20 +15,19 @@ export default function Hero() {
             modern tech, ensuring that every tool we build drives real-world impact.
           </p>
           <div className="hero-actions">
-            <a href="#contact" className="btn btn-primary">Get in Touch</a>
+            <a href="https://www.linkedin.com/in/juan-margitic/" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-linkedin-in" /> LinkedIn
+            </a>
+            <a href="https://github.com/jmargitic" className="btn btn-primary" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-github" /> GitHub
+            </a>
             <a href="/files/CV_Margitic.pdf" className="btn btn-outline" target="_blank" rel="noopener noreferrer">
               <i className="fas fa-arrow-down" /> CV
             </a>
           </div>
-          <div className="social-links">
-            <a href="https://www.linkedin.com/in/juan-margitic/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <i className="fab fa-linkedin-in" />
-            </a>
-            <a href="https://github.com/jmargitic" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <i className="fab fa-github" />
-            </a>
-            <a href="mailto:jfmargitic@gmail.com" aria-label="Email">
-              <i className="fas fa-envelope" />
+          <div className="hero-email">
+            <a href="mailto:jfmargitic@gmail.com">
+              <i className="fas fa-envelope" /> jfmargitic@gmail.com
             </a>
           </div>
         </div>
