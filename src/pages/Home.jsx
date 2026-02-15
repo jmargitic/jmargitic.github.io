@@ -56,7 +56,7 @@ export default function Home() {
               <a href="mailto:jfmargitic@gmail.com">
                 <i className="fas fa-envelope" /> jfmargitic@gmail.com
               </a>
-              <a href="https://www.linkedin.com/in/juan-margitic-37137635/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/juan-margitic/" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-linkedin-in" /> LinkedIn
               </a>
               <a href="https://github.com/jmargitic" target="_blank" rel="noopener noreferrer">

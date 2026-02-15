@@ -21,7 +21,7 @@ export default function Hero() {
             </a>
           </div>
           <div className="social-links">
-            <a href="https://www.linkedin.com/in/juan-margitic-37137635/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/juan-margitic/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
               <i className="fab fa-linkedin-in" />
             </a>
             <a href="https://github.com/jmargitic" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
