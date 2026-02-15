@@ -1,6 +1,27 @@
 import { useState } from 'react'
 
-export default function ResearchCard({ title, authors, journal, award, image, imageAlt, links, description }) {
+function AuthorList({ authors }) {
+  if (!authors) return null
+  if (typeof authors === 'string') return <p className="research-card__authors">{authors}</p>
+  return (
+    <p className="research-card__authors">
+      {authors.map((a, i) => (
+        <span key={a.name}>
+          {i > 0 && (i === authors.length - 1 ? ' & ' : ', ')}
+          {a.url ? (
+            <a href={a.url} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
+              {a.name}
+            </a>
+          ) : (
+            a.name
+          )}
+        </span>
+      ))}
+    </p>
+  )
+}
+
+export default function ResearchCard({ title, authors, journal, award, image, imageAlt, links, description, featuredIn }) {
   const [expanded, setExpanded] = useState(false)
   const isExpandable = description || image
 
@@ -10,11 +31,9 @@ export default function ResearchCard({ title, authors, journal, award, image, im
       onClick={() => isExpandable && setExpanded(!expanded)}
       style={{ cursor: isExpandable ? 'pointer' : 'default' }}
     >
-      {/* Accent bar */}
       <div className="research-card__accent" />
 
       <div className="research-card__content">
-        {/* Top row: thumbnail + info */}
         <div className="research-card__top">
           {image && (
             <div className="research-card__thumb">
@@ -30,7 +49,7 @@ export default function ResearchCard({ title, authors, journal, award, image, im
                 </span>
               )}
             </div>
-            <p className="research-card__authors">{authors}</p>
+            <AuthorList authors={authors} />
             {journal && <p className="research-card__journal">{journal}</p>}
             {award && (
               <div className="research-card__award">
@@ -49,7 +68,6 @@ export default function ResearchCard({ title, authors, journal, award, image, im
           </div>
         </div>
 
-        {/* Expanded detail */}
         {expanded && (
           <div className="research-card__details">
             {image && (
@@ -58,6 +76,16 @@ export default function ResearchCard({ title, authors, journal, award, image, im
               </div>
             )}
             {description && <p className="research-card__description">{description}</p>}
+            {featuredIn && featuredIn.length > 0 && (
+              <div className="research-card__featured" onClick={(e) => e.stopPropagation()}>
+                <span className="research-card__featured-label">Featured in:</span>
+                {featuredIn.map((f) => (
+                  <a key={f.url} href={f.url} target="_blank" rel="noopener noreferrer">
+                    {f.source}
+                  </a>
+                ))}
+              </div>
+            )}
             {links && links.length > 0 && (
               <div className="research-card__links research-card__links--detail" onClick={(e) => e.stopPropagation()}>
                 {links.map((link) => (

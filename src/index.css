@@ -359,16 +359,16 @@ section + section::before {
     justify-content: flex-start;
     padding-top: 48px;
     gap: 0;
-    transform: translateX(100%);
-    transition: transform 0.3s ease, visibility 0.3s;
-    z-index: 1001;
+    z-index: 9999;
     visibility: hidden;
+    opacity: 0;
     pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s;
   }
 
   .nav-menu.active {
-    transform: translateX(0);
     visibility: visible;
+    opacity: 1;
     pointer-events: auto;
   }
 
@@ -778,6 +778,38 @@ h3.subsection-title:first-of-type {
   font-size: 13px;
   color: var(--text-secondary);
   line-height: 1.7;
+}
+
+.research-card__authors a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.research-card__authors a:hover {
+  text-decoration: underline;
+}
+
+.research-card__featured {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  font-size: 12px;
+}
+
+.research-card__featured-label {
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.research-card__featured a {
+  color: var(--accent);
+  font-size: 12px;
+}
+
+.research-card__featured a:hover {
+  text-decoration: underline;
 }
 
 .research-card__links--detail {
