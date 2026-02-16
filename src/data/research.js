@@ -13,7 +13,7 @@ export const publications = [
       'We study how distance to one\u2019s polling place affects the likelihood of voting using a geographic regression discontinuity design with data from Pennsylvania and Georgia. A one-mile increase in distance to polling place reduces the likelihood of voting in person by 2 to 3 percentage points. Effects are two to four times higher among those closest to the polling place. When available, voters substitute to mail-in voting as distance to polling place increases. We estimate a discrete-choice voting model to identify turnout-maximizing polling places. Some precincts have large potential gains in turnout, even when choosing from existing buildings.',
     links: [
       { label: 'Paper', url: 'https://drive.google.com/file/d/1a46Gd-y350eLcAzMbERUBji7cFyJzXRl/view' },
-      { label: 'Online Appendix', url: 'https://drive.google.com/file/d/1uOl0YHuG04-50IMShdZZgDl6giASnu_H/view' },
+      { label: 'Online Appendix', url: 'https://drive.google.com/file/d/1QuKL-eWrxAVGLZOxvhioxfKZSesXcSHP/view' },
       { label: 'Journal', url: 'https://www.aeaweb.org/articles?id=10.1257/pol.20220435' },
     ],
   },
